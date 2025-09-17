@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TensorFlow.js Image Prediction</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0"></script>
+  <script src="script.js" defer></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔮</text></svg>">
+
+</head>
+<body>
+  <h1>TensorFlow.js Image Prediction</h1>
+  
+  <input type="file" id="imageInput" accept="image/*">
+  <br><br>
+  <img id="preview" width="200" style="display:none;"/>
+  <br><br>
+  <button onclick="runImagePrediction()">Run Prediction</button>
+
+  <h2>Prediction Output:</h2>
+ <div id="output"></div>
+</body>
+</html>
